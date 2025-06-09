@@ -1,0 +1,450 @@
+/**
+ * Group Discount Frontend Styles
+ */
+
+/* Base styling for discount labels */
+.group-discount-label,
+.group-discount-next-tier {
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    word-wrap: break-word; /* Allow long words to break */
+    overflow-wrap: break-word; /* Modern browsers */
+    hyphens: auto; /* Allow hyphenation */
+}
+
+/* Current discount label */
+.group-discount-label {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9f4ff 100%);
+    border-left: 4px solid #2196F3;
+}
+
+/* Next tier discount label */
+.group-discount-next-tier {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e9 100%);
+    border-left: 4px solid #4CAF50;
+}
+
+/* Hover effects */
+.group-discount-label:hover,
+.group-discount-next-tier:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Label content styling */
+.group-discount-label p,
+.group-discount-next-tier p {
+    margin: 0.5em 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+    color: #333;
+    transition: none !important; /* Prevent transitions that might cause flickering */
+    visibility: visible !important; /* Ensure always visible */
+    display: block !important; /* Ensure always displayed */
+    word-break: normal; /* Default to normal word breaks */
+    direction: inherit; /* Respect the page's text direction */
+}
+
+/* For CJK (Chinese, Japanese, Korean) and other languages that need special handling */
+html:lang(zh) .group-discount-label p,
+html:lang(zh) .group-discount-next-tier p,
+html:lang(ja) .group-discount-label p,
+html:lang(ja) .group-discount-next-tier p,
+html:lang(ko) .group-discount-label p,
+html:lang(ko) .group-discount-next-tier p,
+html:lang(th) .group-discount-label p,
+html:lang(th) .group-discount-next-tier p {
+    line-height: 1.8; /* Increase line height for better readability */
+    word-break: keep-all; /* Keep CJK words together */
+}
+
+/* Arabic and Hebrew special handling */
+html:lang(ar) .group-discount-label p,
+html:lang(ar) .group-discount-next-tier p,
+html:lang(he) .group-discount-label p,
+html:lang(he) .group-discount-next-tier p {
+    line-height: 1.8; /* Increase line height for better readability */
+    letter-spacing: 0; /* No letter spacing for these languages */
+}
+
+/* Ensure separate styling for units sold vs price information */
+.group-discount-units-sold {
+    padding-bottom: 0.6em;
+    border-bottom: 1px dashed rgba(0,0,0,0.07);
+}
+
+.group-discount-price-comparison {
+    padding-top: 0.6em;
+    font-weight: 500;
+    display: block; /* Ensure it's a block element */
+    width: 100%; /* Take full width */
+    word-wrap: break-word; /* Allow long words to break */
+    overflow-wrap: break-word; /* Modern browsers */
+}
+
+/* Consistent styling for original price to ensure it's clearly distinguished */
+.group-discount-price-comparison .original-price,
+.group-discount-price-comparison span.original-price {
+    color: #616161;
+    text-decoration: line-through;
+    opacity: 0.9;
+    font-weight: normal;
+    margin-right: 3px; /* Add some spacing */
+    display: inline-block !important;
+}
+
+/* Ensure the original price is displayed correctly regardless of structure */
+.group-discount-price-comparison .original-price .woocommerce-Price-amount,
+.original-price .woocommerce-Price-amount {
+    color: #616161;
+    text-decoration: line-through;
+    opacity: 0.9;
+    font-weight: normal;
+}
+
+/* Ensure all amounts inside price comparison have consistent styling */
+.group-discount-price-comparison .woocommerce-Price-amount {
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap; /* Prevent price from wrapping */
+    display: inline-block !important; /* Force display as inline-block */
+    visibility: visible !important; /* Ensure visibility */
+}
+
+/* Make the current price stand out */
+.group-discount-price-comparison strong .woocommerce-Price-amount {
+    color: #1565C0;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+/* Additional style for price arrow */
+.group-discount-price-comparison .price-arrow,
+.price-arrow {
+    margin: 0 5px;
+    color: #757575;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+/* Savings text styling */
+.group-discount-price-comparison .savings-text,
+.savings-text {
+    display: inline-block;
+    margin-left: 6px;
+    white-space: normal; /* Allow wrapping */
+    opacity: 0.9;
+    font-size: 0.95em; /* Slightly smaller */
+}
+
+/* Enhanced mobile responsiveness for price comparison */
+@media (max-width: 480px) {
+    .group-discount-price-comparison {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.8; /* Increased line height for better readability */
+    }
+    
+    .group-discount-price-comparison .price-arrow,
+    .price-arrow {
+        display: block;
+        margin: 4px 0;
+        transform: rotate(90deg); /* Arrow points down on mobile */
+    }
+    
+    .group-discount-price-comparison .savings-text,
+    .savings-text {
+        display: block;
+        margin-top: 6px;
+        margin-left: 0;
+    }
+}
+
+/* Language-specific adjustments */
+html:lang(zh) .group-discount-price-comparison,
+html:lang(ja) .group-discount-price-comparison,
+html:lang(ko) .group-discount-price-comparison {
+    line-height: 1.8; /* More space between lines for Asian languages */
+    letter-spacing: 0.02em; /* Slight letter spacing */
+}
+
+/* RTL specific adjustments */
+.rtl .group-discount-price-comparison,
+html[lang="ar"] .group-discount-price-comparison,
+html[lang="he"] .group-discount-price-comparison {
+    text-align: right;
+    direction: rtl;
+}
+
+.rtl .group-discount-price-comparison .woocommerce-Price-amount:first-of-type,
+html[lang="ar"] .group-discount-price-comparison .woocommerce-Price-amount:first-of-type,
+html[lang="he"] .group-discount-price-comparison .woocommerce-Price-amount:first-of-type {
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+.rtl .group-discount-price-comparison .savings-text,
+html[lang="ar"] .group-discount-price-comparison .savings-text,
+html[lang="he"] .group-discount-price-comparison .savings-text {
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+/* Highlight important information */
+.group-discount-label strong,
+.group-discount-next-tier strong {
+    color: #1565C0;
+    font-weight: 600;
+}
+
+.group-discount-next-tier strong {
+    color: #2E7D32;
+}
+
+/* Icons for labels */
+.group-discount-label:before,
+.group-discount-next-tier:before {
+    font-family: 'dashicons';
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 0.15;
+    font-size: 2.2em;
+    color: #2196F3;
+}
+
+.group-discount-label:before {
+    content: "\f323"; /* Dashicons: tag */
+}
+
+.group-discount-next-tier:before {
+    content: "\f132"; /* Dashicons: plus-alt */
+    color: #4CAF50;
+}
+
+/* Badge for savings */
+.group-discount-savings-badge {
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 20px;
+    margin-left: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    white-space: nowrap; /* Keep badge text on a single line */
+}
+
+.group-discount-next-savings-badge {
+    background-color: #4CAF50;
+}
+
+/* RTL support - enhanced with more specific handling */
+.rtl .group-discount-label,
+.rtl .group-discount-next-tier {
+    border-left: none;
+    border-right: 4px solid #2196F3;
+    text-align: right;
+}
+
+.rtl .group-discount-next-tier {
+    border-right-color: #4CAF50;
+}
+
+.rtl .group-discount-label:before,
+.rtl .group-discount-next-tier:before {
+    right: auto;
+    left: 15px;
+}
+
+.rtl .group-discount-savings-badge {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/* RTL language specific adjustments */
+html[lang="ar"] .group-discount-label,
+html[lang="ar"] .group-discount-next-tier,
+html[lang="he"] .group-discount-label,
+html[lang="he"] .group-discount-next-tier {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Loading state styling */
+.group-discount-label.refreshing,
+.group-discount-next-tier.refreshing {
+    opacity: 0.85; /* Higher opacity to keep text more visible */
+    position: relative;
+}
+
+.group-discount-label.refreshing:after,
+.group-discount-next-tier.refreshing:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.25) url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"%3E%3Cpath stroke="none" d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="%23007cba"%3E%3CanimateTransform attributeName="transform" type="rotate" from="0 50 51" to="360 50 51" dur="1s" repeatCount="indefinite"%3E%3C/animateTransform%3E%3C/path%3E%3C/svg%3E') no-repeat center center;
+    background-size: 30px 30px;
+    pointer-events: none; /* Ensure clicks go through to the elements beneath */
+}
+
+/* Ensure label content remains visible during refresh */
+.group-discount-label.refreshing p,
+.group-discount-next-tier.refreshing p,
+.group-discount-label.refreshing strong,
+.group-discount-next-tier.refreshing strong {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Sale label */
+.onsale {
+    background-color: #2196F3 !important;
+    border-radius: 50px !important;
+    padding: 0.4em 1em !important;
+    font-weight: 600 !important;
+}
+
+/* Price updates animation - much more subtle now */
+.price.updated {
+    animation: price-flash 2s;
+}
+
+@keyframes price-flash {
+    0%, 100% { background-color: transparent; }
+    20% { background-color: rgba(33, 150, 243, 0.05); }
+}
+
+/* Remove double price display in some themes */
+.price del + ins {
+    display: block;
+    margin-top: 0.5em;
+}
+
+/* Price refreshing and updating styles */
+.woocommerce div.product p.price.refreshing,
+.woocommerce div.product span.price.refreshing {
+    opacity: 1; /* Don't change opacity to avoid flickering */
+}
+
+.woocommerce div.product p.price.updated,
+.woocommerce div.product span.price.updated {
+    animation: price-highlight 1.5s ease;
+}
+
+@keyframes price-highlight {
+    0% {
+        text-shadow: 0 0 1px rgba(33, 150, 243, 0.7);
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+/* Ensure price doesn't disappear during updates */
+.woocommerce-Price-amount {
+    transition: none !important; /* Prevent any transitions that might cause flickering */
+    display: inline-block !important; /* Ensure display doesn't change */
+    visibility: visible !important; /* Ensure visibility doesn't change */
+}
+
+/* Additional help for languages with special needs */
+.group-discount-savings-text,
+.savings-text {
+    white-space: normal; /* Allow wrapping */
+    display: inline-block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .group-discount-label,
+    .group-discount-next-tier {
+        padding: 0.8em 1em;
+    }
+    
+    .group-discount-label:before,
+    .group-discount-next-tier:before {
+        display: none;
+    }
+    
+    /* On small screens, allow badges to wrap to a new line if needed */
+    .group-discount-savings-badge {
+        margin-top: 5px;
+        display: inline-block;
+    }
+    
+    /* For very narrow screens, improve layout of price comparison */
+    @media (max-width: 480px) {
+        .group-discount-price-comparison {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .group-discount-price-comparison .price-arrow {
+            display: none; /* Hide arrow on very small screens */
+        }
+        
+        .savings-text {
+            display: block;
+            margin-top: 5px;
+        }
+    }
+}
+
+/* Two-row price comparison display */
+.group-discount-price-comparison.gd-two-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 0.6em;
+    font-weight: 500;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.group-discount-price-comparison .gd-original-price-row,
+.group-discount-price-comparison .gd-current-price-row {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.group-discount-price-comparison .gd-original-price-row {
+    color: #616161;
+    opacity: 0.9;
+}
+
+.group-discount-price-comparison .gd-current-price-row {
+    font-weight: 600;
+}
+
+/* Ensure original price is properly styled */
+.group-discount-price-comparison .original-price,
+.group-discount-price-comparison span.original-price {
+    color: #616161;
+    text-decoration: line-through;
+    opacity: 0.9;
+    font-weight: normal;
+    margin-right: 3px;
+}
+
+/* Consistent styling for the savings text */
+.group-discount-price-comparison .savings-text {
+    color: #4CAF50;
+    font-weight: 500;
+    margin-left: 4px;
+    white-space: nowrap;
+} 
