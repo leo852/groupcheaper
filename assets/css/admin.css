@@ -1,0 +1,113 @@
+/* Group Discount Admin Styles */
+.group-discount-tiers {
+    margin: 15px 0;
+}
+
+.group-discount-tiers .tier-header,
+.group-discount-tiers .tier-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.group-discount-tiers .tier-header {
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.group-discount-tiers .tier-quantity,
+.group-discount-tiers .tier-price {
+    width: 40%;
+    padding-right: 10px;
+}
+
+.group-discount-tiers .tier-action {
+    width: 20%;
+    text-align: right;
+}
+
+.group-discount-tiers input {
+    width: 100%;
+}
+
+.group-discount-tiers .tier-actions {
+    margin-top: 15px;
+}
+
+.group-discount-tiers-wrapper h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Hide Group Discount tab for variable products */
+.product_data_tabs .variable_product_options .group_discount_tab {
+    display: none !important;
+}
+
+/* Show for simple products */
+.product_data_tabs .simple_product_options .group_discount_tab {
+    display: block !important;
+}
+
+/* Sales count section */
+.group-discount-current-sales {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007cba;
+}
+
+.group-discount-current-sales .spinner {
+    margin-left: 5px;
+}
+
+.group-discount-current-sales .sales-count-message {
+    margin-top: 10px;
+}
+
+.group-discount-current-sales .updated {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.group-discount-current-sales .error {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+/* Order statistics debug table */
+.order-statistics {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.order-statistics h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007cba;
+}
+
+.order-statistics table {
+    margin-bottom: 10px;
+}
+
+.order-statistics table th {
+    text-align: left;
+    padding: 8px;
+}
+
+.order-statistics table td {
+    padding: 8px;
+}
+
+.order-statistics table tr.included {
+    background-color: #e6f7ff;
+}
+
+.order-statistics table tr.total {
+    background-color: #f0f0f1;
+    font-weight: bold;
+} 
