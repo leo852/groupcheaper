@@ -2,160 +2,117 @@
 # This file is distributed under the same license as the Group Discount package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Group Discount 1.1.6\n"
+"Project-Id-Version: Group Discount 1.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/group-discount\n"
-"POT-Creation-Date: 2023-11-15 12:00:00+00:00\n"
+"POT-Creation-Date: 2023-10-10 12:00:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-10-10 12:00:00+00:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0\n"
 
 #: group-discount.php:59
 msgid "Group Discount requires WooCommerce to be installed and active."
-msgstr ""
+msgstr "團購折扣需要安裝並啟用 WooCommerce。"
 
 #: includes/class-group-discount.php:83
 msgid "Group Discount"
-msgstr ""
+msgstr "團購折扣"
 
 #: includes/class-group-discount.php:115
 msgid "Enable Group Discount"
-msgstr ""
+msgstr "啟用團購折扣"
 
 #: includes/class-group-discount.php:117
 msgid "Enable tiered pricing based on total sales quantity."
-msgstr ""
+msgstr "根據總銷售量啟用階梯價格。"
 
 #: includes/class-group-discount.php:123
 msgid "Debug Mode"
-msgstr ""
+msgstr "調試模式"
 
 #: includes/class-group-discount.php:125
 msgid "Enable debug mode to show detailed order statistics."
-msgstr ""
+msgstr "啟用調試模式以顯示詳細的訂單統計資訊。"
 
 #: includes/class-group-discount.php:130
 msgid "Quantity Tiers"
-msgstr ""
+msgstr "數量層級"
 
 #: includes/class-group-discount.php:131
 msgid "Set price tiers based on total quantity sold. Lower prices for higher quantities."
-msgstr ""
+msgstr "根據銷售總量設置價格層級。數量越多，價格越低。"
 
 #: includes/class-group-discount.php:134
 msgid "Current Sales Count:"
-msgstr ""
+msgstr "當前銷售數量："
 
 #: includes/class-group-discount.php:134
 msgid "units"
-msgstr ""
+msgstr "件"
 
 #: includes/class-group-discount.php:137
 msgid "Refresh Sales Count"
-msgstr ""
+msgstr "刷新銷售數量"
 
 #: includes/class-group-discount.php:144
 msgid "Order Statistics (Debug Mode)"
-msgstr ""
+msgstr "訂單統計（調試模式）"
 
 #: includes/class-group-discount.php:147
 msgid "Order Status"
-msgstr ""
+msgstr "訂單狀態"
 
 #: includes/class-group-discount.php:148
+#: includes/class-group-discount.php:179
 msgid "Quantity"
-msgstr ""
+msgstr "數量"
 
 #: includes/class-group-discount.php:155
 msgid "Current Cart"
-msgstr ""
+msgstr "當前購物車"
 
 #: includes/class-group-discount.php:165
 msgid "Counted Total (Completed + Processing + On-hold + Pending + Cart)"
-msgstr ""
+msgstr "計數總數（已完成 + 處理中 + 保留 + 待處理 + 購物車）"
 
 #: includes/class-group-discount.php:171
 msgid "Note: Only Completed, Processing, and On-hold orders are counted for pricing tiers."
-msgstr ""
-
-#: includes/class-group-discount.php:179
-msgid "Quantity"
-msgstr ""
+msgstr "注意：只有已完成、處理中和保留狀態的訂單才會計入價格層級。"
 
 #: includes/class-group-discount.php:180
 msgid "Price"
-msgstr ""
+msgstr "價格"
 
 #: includes/class-group-discount.php:193
 msgid "Remove"
-msgstr ""
+msgstr "刪除"
 
 #: includes/class-group-discount.php:198
 msgid "Add Tier"
-msgstr ""
+msgstr "添加層級"
 
 #: includes/class-group-discount.php:672
 msgid "%s units already sold"
-msgstr ""
+msgstr "已售出 %s 件"
 
 #: includes/class-group-discount.php:677
+#: includes/class-group-discount.php:713
 msgid "Save %s"
-msgstr ""
-
-#: includes/class-group-discount.php:683
-msgid "Original price"
-msgstr ""
-
-#: includes/class-group-discount.php:687
-msgid "Current price"
-msgstr ""
-
-#: includes/class-group-discount.php:691
-msgid "You save"
-msgstr ""
-
-#: includes/class-group-discount.php:692
-msgid "per unit"
-msgstr ""
+msgstr "節省 %s"
 
 #: includes/class-group-discount.php:685
 msgid "Original price: %1$s → Current price: %2$s (You save %3$s per unit)"
-msgstr ""
+msgstr "原價：%1$s → 現價：%2$s（每件節省 %3$s）"
 
 #: includes/class-group-discount.php:708
 msgid "Next discount at %s units"
-msgstr ""
-
-#: includes/class-group-discount.php:713
-msgid "Save %s"
-msgstr ""
+msgstr "下一個折扣在 %s 件"
 
 #: includes/class-group-discount.php:721
 msgid "Only %1$s more units needed to unlock price: %2$s per unit"
-msgstr ""
-
-#: includes/class-group-discount.php:1099
-msgid "Sales count refreshed: %d units sold"
-msgstr ""
-
-#: includes/class-group-discount.php:1267
-msgid "Group Discount: This product has %d units sold. Current tier price: $%s (Tier: %d units)"
-msgstr ""
-
-#: includes/class-group-discount.php:1520
-msgid "Refreshing price..."
-msgstr ""
-
-#: includes/class-group-discount.php:1521
-msgid "Price updated!"
-msgstr ""
-
-#: includes/class-group-discount.php:1522
-msgid "Error refreshing price."
-msgstr ""
-
-#: includes/class-group-discount.php:2158
-msgid "All caches cleared successfully."
-msgstr ""
+msgstr "只需再購買 %1$s 件即可解鎖價格：每件 %2$s"

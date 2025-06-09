@@ -1,0 +1,39 @@
+# French translations for Group Discount plugin
+# This file is distributed under the same license as the Group Discount package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Group Discount 1.1.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/group-discount\n"
+"POT-Creation-Date: 2023-11-15 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-11-15 13:00:00+00:00\n"
+"Last-Translator: Test <test@example.com>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Original price"
+msgstr "Prix d'origine"
+
+msgid "Current price"
+msgstr "Prix actuel"
+
+msgid "You save"
+msgstr "Vous économisez"
+
+msgid "per unit"
+msgstr "par unité"
+
+msgid "%s units already sold"
+msgstr "%s unités déjà vendues"
+
+msgid "Save %s"
+msgstr "Économisez %s"
+
+msgid "Next discount at %s units"
+msgstr "Prochaine remise à %s unités"
+
+msgid "Only %1$s more units needed to unlock price: %2$s per unit"
+msgstr "Seulement %1$s unités supplémentaires pour débloquer le prix: %2$s par unité" 
