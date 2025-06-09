@@ -1,0 +1,161 @@
+# Copyright (C) 2023 Group Discount
+# This file is distributed under the same license as the Group Discount package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Group Discount 1.1.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/group-discount\n"
+"POT-Creation-Date: 2023-11-15 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: group-discount.php:59
+msgid "Group Discount requires WooCommerce to be installed and active."
+msgstr ""
+
+#: includes/class-group-discount.php:83
+msgid "Group Discount"
+msgstr ""
+
+#: includes/class-group-discount.php:115
+msgid "Enable Group Discount"
+msgstr ""
+
+#: includes/class-group-discount.php:117
+msgid "Enable tiered pricing based on total sales quantity."
+msgstr ""
+
+#: includes/class-group-discount.php:123
+msgid "Debug Mode"
+msgstr ""
+
+#: includes/class-group-discount.php:125
+msgid "Enable debug mode to show detailed order statistics."
+msgstr ""
+
+#: includes/class-group-discount.php:130
+msgid "Quantity Tiers"
+msgstr ""
+
+#: includes/class-group-discount.php:131
+msgid "Set price tiers based on total quantity sold. Lower prices for higher quantities."
+msgstr ""
+
+#: includes/class-group-discount.php:134
+msgid "Current Sales Count:"
+msgstr ""
+
+#: includes/class-group-discount.php:134
+msgid "units"
+msgstr ""
+
+#: includes/class-group-discount.php:137
+msgid "Refresh Sales Count"
+msgstr ""
+
+#: includes/class-group-discount.php:144
+msgid "Order Statistics (Debug Mode)"
+msgstr ""
+
+#: includes/class-group-discount.php:147
+msgid "Order Status"
+msgstr ""
+
+#: includes/class-group-discount.php:148
+msgid "Quantity"
+msgstr ""
+
+#: includes/class-group-discount.php:155
+msgid "Current Cart"
+msgstr ""
+
+#: includes/class-group-discount.php:165
+msgid "Counted Total (Completed + Processing + On-hold + Pending + Cart)"
+msgstr ""
+
+#: includes/class-group-discount.php:171
+msgid "Note: Only Completed, Processing, and On-hold orders are counted for pricing tiers."
+msgstr ""
+
+#: includes/class-group-discount.php:179
+msgid "Quantity"
+msgstr ""
+
+#: includes/class-group-discount.php:180
+msgid "Price"
+msgstr ""
+
+#: includes/class-group-discount.php:193
+msgid "Remove"
+msgstr ""
+
+#: includes/class-group-discount.php:198
+msgid "Add Tier"
+msgstr ""
+
+#: includes/class-group-discount.php:672
+msgid "%s units already sold"
+msgstr ""
+
+#: includes/class-group-discount.php:677
+msgid "Save %s"
+msgstr ""
+
+#: includes/class-group-discount.php:683
+msgid "Original price"
+msgstr ""
+
+#: includes/class-group-discount.php:687
+msgid "Current price"
+msgstr ""
+
+#: includes/class-group-discount.php:691
+msgid "You save"
+msgstr ""
+
+#: includes/class-group-discount.php:692
+msgid "per unit"
+msgstr ""
+
+#: includes/class-group-discount.php:685
+msgid "Original price: %1$s → Current price: %2$s (You save %3$s per unit)"
+msgstr ""
+
+#: includes/class-group-discount.php:708
+msgid "Next discount at %s units"
+msgstr ""
+
+#: includes/class-group-discount.php:713
+msgid "Save %s"
+msgstr ""
+
+#: includes/class-group-discount.php:721
+msgid "Only %1$s more units needed to unlock price: %2$s per unit"
+msgstr ""
+
+#: includes/class-group-discount.php:1099
+msgid "Sales count refreshed: %d units sold"
+msgstr ""
+
+#: includes/class-group-discount.php:1267
+msgid "Group Discount: This product has %d units sold. Current tier price: $%s (Tier: %d units)"
+msgstr ""
+
+#: includes/class-group-discount.php:1520
+msgid "Refreshing price..."
+msgstr ""
+
+#: includes/class-group-discount.php:1521
+msgid "Price updated!"
+msgstr ""
+
+#: includes/class-group-discount.php:1522
+msgid "Error refreshing price."
+msgstr ""
+
+#: includes/class-group-discount.php:2158
+msgid "All caches cleared successfully."
+msgstr ""
